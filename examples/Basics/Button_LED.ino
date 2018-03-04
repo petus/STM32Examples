@@ -10,8 +10,7 @@
 *  Anode of LED is connected to PC10, Cathode of LED to GND
 *  Button is connected between PC11 and GND
 *
-*  Made by Petr Sramek (2018)
-*  https://www.linkedin.com/in/petr-%C5%A1r%C3%A1mek-7b0072107/
+*  Made by http://stm32duino.eu (2018)
 */
 
 
