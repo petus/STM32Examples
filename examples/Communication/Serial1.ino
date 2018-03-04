@@ -12,8 +12,7 @@
 *  RX - PA10 (Arduino D2) -> connect RX of STM32 to TX of USB-UART converter
 *  GND to GND
 *
-*  Made by Petr Sramek (2018)
-*  https://www.linkedin.com/in/petr-%C5%A1r%C3%A1mek-7b0072107/
+*  Made by http://stm32duino.eu (2018)
 */
 
 // the setup function runs once when you press reset or power the board
