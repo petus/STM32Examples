@@ -52,7 +52,7 @@ void loop()
 {
   // send data through onboard USB-UART converter (STLink)
   Serial.print("Temperature: ");
-  Serial.print(String(sensor.getCelsiusHundredths()/100.0, 2*/)); // 2450 = 24.50 °C
+  Serial.print(String(sensor.getCelsiusHundredths()/100.0, 2)); // 2450 = 24.50 °C
   Serial.println(" °C");
 
   Serial.print("Humidity: ");
