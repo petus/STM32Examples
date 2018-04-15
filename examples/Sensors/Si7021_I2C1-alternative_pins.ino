@@ -1,11 +1,12 @@
 /*
-*  Si7021 temperature/humidity sensor (I2C1 bus - default) example with Nucleo 64 
+*  Si7021 temperature/humidity sensor (I2C1 bus - default I2C bus with alternative pins) 
+*  example with Nucleo 64 
 *  STM32F411 which is supported in Arduino IDE by
 *  www.github.com/stm32duino
 *
 *  Description:
 *  Measures temperature and humidity from Si7021 which is connected to 
-*  I2C1 bus (default) and sends through Serial (STLink, 9600 Bd)
+*  I2C1 bus with alternative pins (PB6-SCL, PB7-SDA) and sends through Serial (STLink, 9600 Bd)
 *
 *  Connection:
 *  Nucleo 64 | Si7021
@@ -29,8 +30,8 @@ SI7021 sensor;
 // the setup function runs once when you press reset or power the board
 void setup() 
 {
-  Wire.setSCL(PB_6);  // alternative pinout of I2C1_SCL - from PB8 (D15) to PB6 (Morpho con)
-  Wire.setSDA(PB_7);  // alternative pinout of I2C1_SDA - from PB9 (D14) to PB7 (D10)
+  Wire.setSCL(PB_6);  // alternative pinout of I2C1_SCL - PB6 (Morpho con) instead of PB8 (D15) 
+  Wire.setSDA(PB_7);  // alternative pinout of I2C1_SDA - PB7 (D10) instead of PB9 (D14) 
   
   sensor.begin();  // initialization of Si7021 sensor
   Serial.begin(9600);   // initialization of Serial (STLink), 9600 Bd
