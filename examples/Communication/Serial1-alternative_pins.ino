@@ -20,8 +20,8 @@
 // the setup function runs once when you press reset or power the board
 void setup() 
 {
-    Serial1.setTx (PB6); // alternative Tx of Serial1
-    Serial1.setRx (PB7); // alternative Rx of Serial1
+    Serial1.setTx(PB6); // alternative Tx of Serial1
+    Serial1.setRx(PB7); // alternative Rx of Serial1
     Serial1.begin(9600); // initialize Serial1
 }
 
