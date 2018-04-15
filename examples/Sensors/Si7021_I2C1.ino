@@ -29,15 +29,16 @@ SI7021 sensor;
 // the setup function runs once when you press reset or power the board
 void setup() 
 {
-  sensor.begin();	// initialization of Si7021 sensor
+  sensor.begin();  // initialization of Si7021 sensor
   Serial.begin(9600);   // initialization of Serial (STLink), 9600 Bd
   
   // wait for serial
-  while (!Serial) {
+  while (!Serial) 
+  {
     delay(100);
   }
 
-  Serial.println("Test of Si7021");
+  Serial.println("Test of Si7021 and STM32duino");
   
   if (!sensor.begin()) 
   {
