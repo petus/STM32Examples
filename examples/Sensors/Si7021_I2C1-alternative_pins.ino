@@ -30,8 +30,8 @@ SI7021 sensor;
 // the setup function runs once when you press reset or power the board
 void setup() 
 {
-  Wire.setSCL(PB_6);  // alternative pinout of I2C1_SCL - PB6 (Morpho con) instead of PB8 (D15) 
-  Wire.setSDA(PB_7);  // alternative pinout of I2C1_SDA - PB7 (D10) instead of PB9 (D14) 
+  Wire.setSCL(PB6);  // alternative pinout of I2C1_SCL - PB6 (Morpho con) instead of PB8 (D15) 
+  Wire.setSDA(PB7);  // alternative pinout of I2C1_SDA - PB7 (D10) instead of PB9 (D14) 
   
   sensor.begin();  // initialization of Si7021 sensor
   Serial.begin(9600);   // initialization of Serial (STLink), 9600 Bd
