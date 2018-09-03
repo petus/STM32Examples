@@ -13,8 +13,14 @@
 *  RX - PA12 -> connect RX of STM32 to TX of USB-UART converter
 *  GND to GND
 *
+* Define serial and RX, TX pins
+* HardwareSerial Serial6(rx, tx);
+* 
 *  Made by http://stm32duino.eu (2018)
 */
+
+// set RX and TX pins
+HardwareSerial Serial6(PA12, PA11);
 
 // the setup function runs once when you press reset or power the board
 void setup() 
