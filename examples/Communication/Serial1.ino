@@ -11,9 +11,15 @@
 *  TX - PA9 ( Arduino D8) -> connect TX of STM32 to RX of USB-UART converter
 *  RX - PA10 (Arduino D2) -> connect RX of STM32 to TX of USB-UART converter
 *  GND to GND
+* 
+* Define serial and RX, TX pins
+* HardwareSerial Serial1(rx, tx);
 *
 *  Made by http://stm32duino.eu (2018)
 */
+
+// set RX and TX pins
+HardwareSerial Serial1(PA10, PA9);
 
 // the setup function runs once when you press reset or power the board
 void setup() 
