@@ -15,14 +15,18 @@
 *  RX - PC7 -> connect RX of STM32 to TX of USB-UART converter
 *  GND to GND
 *
+* Define serial and RX, TX pins
+* HardwareSerial Serial6(rx, tx);
+*
 *  Made by http://stm32duino.eu (2018)
 */
+
+// set RX and TX pins
+HardwareSerial Serial6(PC7, PC6);
 
 // the setup function runs once when you press reset or power the board
 void setup() 
 {
-    Serial6.setTx(PC6); // alternative Tx of Serial6
-    Serial6.setRx(PC7); // alternative Rx of Serial6
     Serial6.begin(9600); // initialize Serial6
 }
 
